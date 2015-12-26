@@ -1,0 +1,11 @@
+#/etc/systemd/system/homepass.timer
+[Unit]
+Description=Run homepass.service every 5 minutes
+
+[Timer]
+OnStartupSec=10
+OnUnitActiveSec=5min
+Unit=homepass.service
+
+[Install]
+WantedBy=multi-user.target

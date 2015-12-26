@@ -1,0 +1,9 @@
+#/etc/systemd/system/homepass.service
+[Unit]
+Description=Homepass
+
+[Service]
+ExecStart=/home/pi/homepass.sh
+
+[Install]
+WantedBy=multi-user.target
